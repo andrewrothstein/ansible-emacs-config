@@ -4,4 +4,7 @@
   roles:
     - role: andrewrothstein.emacs
     - role: '{{playbook_dir}}'
+      emacs_pkgs:
+        - json-mode
+        - go-mode
       
