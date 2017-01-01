@@ -14,7 +14,6 @@
     - 50melpa.el
     - 50mycpp.el
     - 50python.el
-    - 51dockertramp.el
   template: >
     src={{item}}.j2
     dest={{emacs_modes_dir}}/{{item}}
