@@ -1,2 +1,18 @@
 ---
-# defaults file for emacs-config
+# defaults file for emacs
+emacs_pkg_archives:
+  melpa: http://melpa.milkbox.net/packages/
+  elpa: http://tromey.com/elpa/
+  gnu: http://elpa.gnu.org/
+  marmalade: https://marmalade-repo.org/packages/
+
+emacs_pkgs:
+  - magit
+  - dockerfile-mode
+  - julia-mode
+  - json-mode
+  - go-mode
+
+emacs_python_indent: 2
+emacs_theme: tango
+
