@@ -16,3 +16,4 @@ emacs_pkgs:
 emacs_python_indent: 2
 emacs_theme: tango
 
+emacs_config_fixssh: ~/.fixssh

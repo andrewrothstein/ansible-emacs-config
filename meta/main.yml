@@ -20,5 +20,8 @@ galaxy_info:
     - emacs
     - editors
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.grabssh
+    version: v1.0.0
+    grabssh_fixssh: '{{emacs_config_fixssh}}'
   

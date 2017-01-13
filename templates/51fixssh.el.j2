@@ -1,0 +1,14 @@
+(defun fixssh ()
+  "Run fixssh script for use in GNU screen with X forwarding"
+  (interactive)
+  (save-excursion
+    (let ((buffer (find-file-noselect "{{emacs_config_fixssh}}")))
+      (set-buffer buffer)
+      (setq buffer-read-only t)
+      (goto-char (point-min))
+      (while (re-search-forward
+              "\\([A-Z_][A-Z0-9_]*\\) *= *\"\\([^\"]*\\)\"" nil t)
+        (let ((key (match-string 1))
+              (val (match-string 2)))
+          (setenv key val)))
+      (kill-buffer buffer))))
