@@ -1,7 +1,8 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-emacs.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-emacs)
 andrewrothstein.emacs-config
 =========
 
-A role to my [Emacs](https://www.gnu.org/software/emacs/) configuration
+A role to install my [Emacs](https://www.gnu.org/software/emacs/) configuration
 
 Requirements
 ------------
