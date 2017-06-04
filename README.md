@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-emacs.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-emacs)
 andrewrothstein.emacs-config
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-emacs-config.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-emacs-config)
 
 A role to install my [Emacs](https://www.gnu.org/software/emacs/) configuration
 
