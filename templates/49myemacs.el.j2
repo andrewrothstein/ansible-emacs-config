@@ -1,8 +1,5 @@
 ;;; terminal
-(load-theme 'tango)
-
-;;; shortcuts
-(global-set-key "\M-g" 'goto-line)
+(load-theme '{{emacs_config_theme}})
 
 ;;; Also highlight parens
 (setq show-paren-delay 0
@@ -17,6 +14,3 @@
           (t (self-insert-command (or arg 1)))))
 
 (global-set-key "%" 'match-paren)
-
-;;; dark colors bad for my eyes. tango is brighter
-(load-theme '{{emacs_theme}})

@@ -24,4 +24,3 @@ dependencies:
   - role: andrewrothstein.grabssh
     version: v1.0.1
     grabssh_fixssh: '{{emacs_config_fixssh}}'
-  

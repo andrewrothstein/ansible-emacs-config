@@ -1,24 +1,30 @@
 ---
 - name: resolve platform specific vars
-  include_vars: "{{item}}"
+  include_vars: '{{item}}'
   with_first_found:
-    - "{{ansible_distribution}}-{{ansible_distribution_release}}.yml"
-    - "{{ansible_distribution}}.yml"
-    - "{{ansible_os_family}}.yml"
+    - files:
+        - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
+        - '{{ansible_distribution}}.yml'
+        - '{{ansible_os_family}}.yml'
+      skip: true
+      paths:
+        - '{{role_path}}/vars'
 
 - name: install emacs modes/settings
   become : yes
   become_user: root
   with_items:
-    - 49myemacs.el
-    - 50melpa.el
-    - 50mycpp.el
-    - 50python.el
-    - 51fixssh.el
-  template: >
-    src={{item}}.j2
-    dest={{emacs_modes_dir}}/{{item}}
-    mode=0644
+    - f: 48snippets.el
+    - f: 49myemacs.el
+    - f: 50melpa.el
+    - f: 50mycpp.el
+    - f: 50js.el
+    - f: 50python.el
+    - f: 51fixssh.el
+  template:
+    src: '{{item.f}}.j2'
+    dest: '{{item.d|default(emacs_config_modes_dir)}}/{{item.f}}'
+    mode: '{{item.m|default("0644")}}'
 
 - name: bootstrap root user install...
   become: yes

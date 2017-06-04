@@ -1,2 +1,2 @@
 ---
-emacs_modes_dir: /usr/share/emacs/site-lisp/site-start.d
+emacs_config_modes_dir: /usr/share/emacs/site-lisp/site-start.d
