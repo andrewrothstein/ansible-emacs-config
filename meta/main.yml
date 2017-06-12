@@ -22,6 +22,7 @@ galaxy_info:
     - name: Alpine
       versions:
         - '3.5'
+        - '3.6'
         - latest
   galaxy_tags:
     - emacs
@@ -29,5 +30,5 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.grabssh
-    version: v1.0.1
+    version: v1.0.2
     grabssh_fixssh: '{{emacs_config_fixssh}}'
