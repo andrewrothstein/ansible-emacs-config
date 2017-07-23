@@ -1,2 +1,5 @@
 ---
 # vars file for emacs
+emacs_config_user_emacs_d: '{{ansible_env.HOME}}/.emacs.d'
+
+emacs_config_emacs_d: '{% if emacs_config_privilege_escalate %}{{emacs_config_system_emacs_d}}{% else %}{{emacs_config_user_emacs_d}}{% endif %}'

@@ -10,6 +10,14 @@
       paths:
         - '{{role_path}}/vars'
 
+- name: ensure settings directory exists
+  become: yes
+  become_user: root
+  file:
+    path: '{{emacs_config_emacs_d}}'
+    state: directory
+    mode: 0755
+
 - name: install emacs modes/settings
   become : yes
   become_user: root
@@ -23,7 +31,7 @@
     - f: 51fixssh.el
   template:
     src: '{{item.f}}.j2'
-    dest: '{{item.d|default(emacs_config_modes_dir)}}/{{item.f}}'
+    dest: '{{item.d|default(emacs_config_emacs_d)}}/{{item.f}}'
     mode: '{{item.m|default("0644")}}'
 
 - name: bootstrap root user install...

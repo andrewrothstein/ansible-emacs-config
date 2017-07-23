@@ -17,6 +17,8 @@ emacs_config_pkgs:
 emacs_config_python_indent: 2
 emacs_config_theme: tango
 
+emacs_config_privilege_escalate: True
+
 emacs_config_fixssh: ~/.fixssh
 
 emacs_config_js_indent_level: 2
