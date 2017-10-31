@@ -13,6 +13,7 @@ emacs_config_pkgs:
   - json-mode
   - go-mode
   - yaml-mode
+  - csharp-mode
 
 emacs_config_python_indent: 2
 emacs_config_theme: tango
