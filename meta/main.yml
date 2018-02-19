@@ -12,6 +12,8 @@ galaxy_info:
         - 23
         - 24
         - 25
+        - 26
+        - 27
     - name: Ubuntu
       versions:
         - trusty
@@ -19,10 +21,12 @@ galaxy_info:
     - name: Debian
       versions:
         - jessie
+        - stretch
     - name: Alpine
       versions:
         - '3.5'
         - '3.6'
+        - '3.7'
         - latest
   galaxy_tags:
     - emacs
