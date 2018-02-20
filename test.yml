@@ -1,8 +1,7 @@
-
 ---
 - hosts: all
   roles:
-    - role: andrewrothstein.emacs
+    - andrewrothstein.emacs-build
     - role: '{{playbook_dir}}'
       emacs_pkgs:
         - json-mode
