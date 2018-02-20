@@ -22,17 +22,11 @@ galaxy_info:
       versions:
         - jessie
         - stretch
-    - name: Alpine
-      versions:
-        - '3.5'
-        - '3.6'
-        - '3.7'
-        - latest
   galaxy_tags:
     - emacs
     - editors
 
 dependencies:
   - role: andrewrothstein.grabssh
-    version: v1.0.3
+    version: v1.0.4
     grabssh_fixssh: '{{emacs_config_fixssh}}'
