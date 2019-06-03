@@ -14,10 +14,14 @@ galaxy_info:
         - 25
         - 26
         - 27
+        - 28
+        - 29
+        - 30
     - name: Ubuntu
       versions:
         - trusty
         - xenial
+        - bionic
     - name: Debian
       versions:
         - jessie
@@ -27,6 +31,8 @@ galaxy_info:
     - editors
 
 dependencies:
+  - role: andrewrothstein.git
+    version: v3.0.4
   - role: andrewrothstein.grabssh
-    version: v1.0.4
+    version: v1.0.5
     grabssh_fixssh: '{{emacs_config_fixssh}}'

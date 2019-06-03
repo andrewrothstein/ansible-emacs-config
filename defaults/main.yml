@@ -1,25 +1,3 @@
 ---
 # defaults file for emacs
-emacs_config_pkg_archives:
-  melpa: http://melpa.milkbox.net/packages/
-  elpa: http://tromey.com/elpa/
-  gnu: http://elpa.gnu.org/
-  marmalade: https://marmalade-repo.org/packages/
-
-emacs_config_pkgs:
-  - magit
-  - dockerfile-mode
-  - julia-mode
-  - json-mode
-  - go-mode
-  - yaml-mode
-  - csharp-mode
-
-emacs_config_python_indent: 2
-emacs_config_theme: tango
-
-emacs_config_privilege_escalate: True
-
 emacs_config_fixssh: ~/.fixssh
-
-emacs_config_js_indent_level: 2
